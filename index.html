@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family First Chiropractic | Vermillion, SD</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(147,197,253,0.8) 0%, rgba(103,232,249,0.8) 100%);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .service-card:hover .service-icon {
+            transform: scale(1.1);
+            color: #3b82f6;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: #3b82f6;
+            transition: width .3s;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl mr-3">FFC</div>
+                <h1 class="text-xl font-bold text-gray-800">Family First <span class="text-blue-500">Chiropractic</span></h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="nav-link text-gray-700 hover:text-blue-500 font-medium">Home</a>
+                <a href="#services" class="nav-link text-gray-700 hover:text-blue-500 font-medium">Services</a>
+                <a href="#about" class="nav-link text-gray-700 hover:text-blue-500 font-medium">About Us</a>
+                <a href="#testimonials" class="nav-link text-gray-700 hover:text-blue-500 font-medium">Testimonials</a>
+                <a href="#contact" class="nav-link text-gray-700 hover:text-blue-500 font-medium">Contact</a>
+            </nav>
+            
+            <div class="hidden md:block">
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-medium transition duration-300">Book Appointment</a>
+            </div>
+            
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white py-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="text-gray-700 hover:text-blue-500 font-medium">Home</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-500 font-medium">Services</a>
+                <a href="#about" class="text-gray-700 hover:text-blue-500 font-medium">About Us</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-blue-500 font-medium">Testimonials</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-500 font-medium">Contact</a>
+                <a href="#contact" class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-full font-medium text-center mt-2">Book Appointment</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient py-20 md:py-32">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Gentle Chiropractic Care for the Whole Family</h2>
+                <p class="text-lg text-gray-700 mb-6">At Family First Chiropractic, we believe in nurturing health from the inside out. Our gentle, evidence-based approach helps families in Vermillion achieve optimal wellness naturally.</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium text-center transition duration-300">Schedule Today</a>
+                    <a href="#services" class="bg-white hover:bg-gray-100 text-blue-600 px-6 py-3 rounded-full font-medium text-center border border-blue-600 transition duration-300">Our Services</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Happy family receiving chiropractic care" class="rounded-lg shadow-xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Specialized Services</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-4"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We offer comprehensive chiropractic care tailored to every family member's unique needs, from newborns to seniors.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mb-4 transition duration-300">
+                        <i class="fas fa-bone text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Spinal Adjustments</h3>
+                    <p class="text-gray-600 mb-4">Gentle, precise adjustments to restore proper alignment and relieve pain throughout the body.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Reduces pain and inflammation</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Improves mobility and flexibility</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Enhances nervous system function</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mb-4 transition duration-300">
+                        <i class="fas fa-baby text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Pediatric Care</h3>
+                    <p class="text-gray-600 mb-4">Specialized gentle techniques designed specifically for infants, children, and adolescents.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Supports healthy growth and development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Addresses colic, ear infections, and more</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Promotes better sleep and behavior</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-gray-50 rounded-lg p-6 shadow-sm hover:shadow-md transition duration-300">
+                    <div class="service-icon w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mb-4 transition duration-300">
+                        <i class="fas fa-heartbeat text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Wellness Plans</h3>
+                    <p class="text-gray-600 mb-4">Customized care plans to help your family achieve and maintain optimal health long-term.</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Preventative care strategies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Nutritional counseling</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check text-blue-500 mr-2 mt-1"></i>
+                            <span>Exercise and lifestyle recommendations</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0 lg:pr-10">
+                    <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Dr. Smith with a patient" class="rounded-lg shadow-lg w-full">
+                </div>
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Our Story & Mission</h2>
+                    <div class="w-20 h-1 bg-blue-500 mb-6"></div>
+                    <p class="text-lg text-gray-600 mb-6">Family First Chiropractic was founded in 2010 by Dr. Michael Smith with a simple vision: to provide compassionate, family-centered chiropractic care that addresses the root causes of health issues rather than just symptoms.</p>
+                    <p class="text-lg text-gray-600 mb-6">After experiencing the transformative power of chiropractic care firsthand following a sports injury in college, Dr. Smith dedicated his career to helping families experience the same life-changing benefits.</p>
+                    <div class="bg-blue-50 border-l-4 border-blue-500 p-4 mb-6">
+                        <p class="text-blue-700 italic">"We believe every family deserves access to natural, drug-free healthcare that supports the body's incredible ability to heal itself."</p>
+                        <p class="text-blue-700 font-medium mt-2">— Dr. Michael Smith</p>
+                    </div>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-2">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <span class="text-gray-700">15+ Years Experience</span>
+                        </div>
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-2">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span class="text-gray-700">Family-Focused</span>
+                        </div>
+                        <div class="flex items-center bg-white px-4 py-2 rounded-full shadow-sm">
+                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-2">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <span class="text-gray-700">Gentle Techniques</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What Our Patients Say</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-4"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Hear from families who have experienced the difference at Family First Chiropractic.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-sm transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-gray-500 text-sm">Mother of two</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"Dr. Smith's care has been life-changing for my family. My son's chronic ear infections cleared up after just a few visits, and my back pain is completely gone. We're so grateful!"</p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-quote-left mr-1"></i> 3 months ago
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-sm transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">Mark Thompson</h4>
+                            <p class="text-gray-500 text-sm">Local business owner</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"After years of chronic headaches and trying everything, Dr. Smith identified the root cause and developed a plan that worked. I haven't had a headache in months and feel better than I have in years."</p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-quote-left mr-1"></i> 5 months ago
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-50 rounded-lg p-6 shadow-sm transition duration-300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center text-blue-500 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-800">The Wilson Family</h4>
+                            <p class="text-gray-500 text-sm">Family of four</p>
+                        </div>
+                    </div>
+                    <div class="text-yellow-400 mb-3">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-gray-600 mb-4">"We all see Dr. Smith regularly - from our 6-month-old to my 70-year-old mother. The care is gentle, effective, and tailored to each of our needs. It's become an essential part of our family's wellness routine."</p>
+                    <div class="text-sm text-gray-500">
+                        <i class="fas fa-quote-left mr-1"></i> 1 year ago
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="inline-flex items-center text-blue-500 hover:text-blue-600 font-medium">
+                    <span>Read more testimonials</span>
+                    <i class="fas fa-chevron-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Visit Our Clinic</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-4"></div>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">We're here to help your family achieve better health. Schedule your appointment today.</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Contact Information</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-4">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Address</h4>
+                                    <p class="text-gray-600">123 Wellness Way, Vermillion, SD 57069</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-4">
+                                    <i class="fas fa-phone-alt"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Phone</h4>
+                                    <p class="text-gray-600">(605) 555-0123</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-4">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Email</h4>
+                                    <p class="text-gray-600">care@familyfirstchiro.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-4">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Hours</h4>
+                                    <p class="text-gray-600">Mon-Wed: 8am-6pm</p>
+                                    <p class="text-gray-600">Thu-Fri: 8am-5pm</p>
+                                    <p class="text-gray-600">Sat: 9am-12pm</p>
+                                    <p class="text-gray-600">Sun: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2923.987477715993!2d-96.9282239241758!3d42.87092597114985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8792a3c9b1a8e4a9%3A0x5c0c2c5e5a5a5a5a!2sVermillion%2C%20SD%2057069!5e0!3m2!1sen!2sus!4v1689875423455!5m2!1sen!2sus" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-6">Schedule Your Appointment</h3>
+                        <form id="appointment-form" class="space-y-4">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div>
+                                    <label for="first-name" class="block text-gray-700 font-medium mb-1">First Name</label>
+                                    <input type="text" id="first-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-gray-700 font-medium mb-1">Last Name</label>
+                                    <input type="text" id="last-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-1">Phone</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                            </div>
+                            
+                            <div>
+                                <label for="service" class="block text-gray-700 font-medium mb-1">Service Needed</label>
+                                <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                    <option value="">Select a service</option>
+                                    <option value="spinal-adjustment">Spinal Adjustment</option>
+                                    <option value="pediatric-care">Pediatric Care</option>
+                                    <option value="wellness-plan">Wellness Plan</option>
+                                    <option value="prenatal-care">Prenatal Care</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-1">Message (Optional)</label>
+                                <textarea id="message" rows="3" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                            </div>
+                            
+                            <div class="pt-2">
+                                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Request Appointment</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="mt-8 bg-blue-50 rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">New Patient Special</h3>
+                        <p class="text-gray-700 mb-4">We welcome new patients with a special introductory offer:</p>
+                        <div class="bg-white rounded-lg p-4 border border-blue-200">
+                            <div class="flex items-center">
+                                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 mr-4">
+                                    <i class="fas fa-percentage text-xl"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">$49 Initial Consultation & Adjustment</h4>
+                                    <p class="text-gray-600 text-sm">(Regularly $120)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="text-gray-700 mt-4 text-sm">*Offer valid for first-time patients only. Cannot be combined with insurance.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-12 bg-blue-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Join Our Wellness Community</h2>
+            <p class="text-lg mb-6 max-w-2xl mx-auto">Subscribe to our newsletter for health tips, special offers, and clinic updates.</p>
+            <form class="flex flex-col sm:flex-row max-w-md mx-auto sm:max-w-xl">
+                <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-t-lg sm:rounded-tr-none sm:rounded-l-lg focus:outline-none text-gray-800">
+                <button type="submit" class="bg-blue-800 hover:bg-blue-900 px-6 py-3 rounded-b-lg sm:rounded-bl-none sm:rounded-r-lg font-medium transition duration-300">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-lg mr-3">FFC</div>
+                        <h3 class="text-xl font-bold">Family First <span class="text-blue-400">Chiropractic</span></h3>
+                    </div>
+                    <p class="text-gray-400 mb-4">Gentle, family-centered chiropractic care in Vermillion, SD.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                            <i class="fab fa-yelp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition duration-300">Services</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition duration-300">About Us</a></li>
+                        <li><a href="#testimonials" class="text-gray-400 hover:text-white transition duration-300">Testimonials</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Spinal Adjustments</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Pediatric Care</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Wellness Plans</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Prenatal Care</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Sports Injuries</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <address class="not-italic text-gray-400">
+                        <p class="mb-2">123 Wellness Way</p>
+                        <p class="mb-2">Vermillion, SD 57069</p>
+                        <p class="mb-2">Phone: (605) 555-0123</p>
+                        <p class="mb-4">Email: care@familyfirstchiro.com</p>
+                    </address>
+                    <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-medium transition duration-300">Book Appointment</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Family First Chiropractic. All rights reserved.</p>
+                <p class="mt-2 text-sm">Website designed with care for your family's wellness.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                }
+            });
+        });
+
+        // Form submission
+        document.getElementById('appointment-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const service = document.getElementById('service').value;
+            const message = document.getElementById('message').value;
+            
+            // Here you would typically send this data to your server
+            console.log('Appointment Request:', {
+                firstName,
+                lastName,
+                email,
+                phone,
+                service,
+                message
+            });
+            
+            // Show success message
+            alert(`Thank you, ${firstName}! Your appointment request has been received. We'll contact you shortly to confirm.`);
+            
+            // Reset form
+            this.reset();
+        });
+    </script>
+</body>
+</html>
